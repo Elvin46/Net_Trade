@@ -1,0 +1,74 @@
+* {
+  font-family: 'Rubik', sans-serif;
+}
+
+nav {
+  height: 80px;
+}
+
+nav .navbar-collapse {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+nav .navbar-collapse .nav-right .nav-link {
+  margin: 0 12px;
+}
+
+nav .navbar-collapse .nav-right .nav-icon {
+  color: black;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  -webkit-box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.08);
+          box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.08);
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+}
+
+nav .navbar-collapse .nav-right .nav-icon:hover {
+  color: white;
+  background-color: #D85A54;
+}
+
+nav .navbar-collapse .nav-right .membership {
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: -0.8px;
+  color: #000000;
+}
+
+.primary-button {
+  width: 100px;
+  height: 40px;
+  text-align: center;
+  background: #D85A54;
+  border-radius: 10px;
+  color: white !important;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
+  letter-spacing: -1.2px;
+  -webkit-transition: 1.6s;
+  transition: 1.6s;
+}
+
+.primary-button:hover {
+  background: #c04740;
+}
+
+.nav-button {
+  width: 100px;
+  height: 40px;
+  text-align: center;
+  color: #333333;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
+  letter-spacing: -1.2px;
+}
+/*# sourceMappingURL=index.css.map */

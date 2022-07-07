@@ -20,7 +20,6 @@
     <title>Document</title>
 </head>
 <body>
-<!--Main Navigation-->
 <header>
   <!-- Sidebar -->
   <nav
@@ -157,7 +156,8 @@
                 <a class="nav-link nav-icon" href="#"><i class="fa-regular fa-message"></i></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link nav-icon" href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                <a class="nav-link nav-icon" href="#"><i class="fa-solid fa-magnifying-glass"></i>
+                </a>
               </li>
               <li class="nav-item">
                 <a class="nav-link nav-icon" href="#"><i class="fa-regular fa-bell"></i></a>
@@ -179,17 +179,40 @@
             </ul>
     </div>
     <!-- Container wrapper -->
+    <div class="modalOpen">
+      <div class="notification">
+        Latest notifications
+      </div>
+      <ul class="notification-cards d-flex align-items-center flex-column">
+        <li class="notification-card d-flex flex-row align-items-center">
+          <div class="card-profile">IB</div>
+          <div class="ps-3 notification-info"> 
+            <p class="name">Ilkin Bayramov</p>
+            <p class="work">UI/UX</p>
+            <p class="date">7 hours ago</p>
+          </div>
+        </li>
+        <li class="notification-card d-flex flex-row align-items-center">
+          <div class="card-profile">IB</div>
+          <div class="ps-3 notification-info"> 
+            <p class="name">Ilkin Bayramov</p>
+            <p class="work">UI/UX</p>
+            <p class="date">7 hours ago</p>
+          </div>
+        </li>
+      </ul>
+      <a class="nav-link primary-button " href="#">All Notifications</a>
+    </div>
   </nav>
+
+  
   <!-- Navbar -->
 </header>
-<!--Main Navigation-->
 
-<!--Main layout-->
-<main style="margin-top: 58px">
-  <div class="container pt-4">
 
-  </div>
-</main>
+
+
+
 <script src="./index.js"></script> 
 <!--Main layout-->
 </body>

@@ -2,24 +2,68 @@
   font-family: 'Rubik', sans-serif;
 }
 
+@media (min-width: 991.98px) {
+  main {
+    padding-left: 240px;
+  }
+  .nav-link-sm {
+    display: none !important;
+  }
+  .login-sm {
+    display: none !important;
+  }
+  .login-lg {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media (max-width: 992px) {
+  .nav-link-sm {
+    display: block;
+  }
+  .nav-link-lg {
+    display: none !important;
+  }
+  .login-sm {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .login-lg {
+    display: none !important;
+  }
+  .nav-icon-sm {
+    color: black;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    -webkit-box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.08);
+            box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.08);
+    -webkit-transition: 0.6s;
+    transition: 0.6s;
+    text-align: center;
+  }
+  .nav-icon-sm:hover {
+    color: white !important;
+    background-color: #D85A54;
+  }
+}
+
 nav {
   height: 80px;
 }
 
-nav .navbar-collapse {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+nav .navbar-brand span {
+  font-weight: 600;
 }
 
-nav .navbar-collapse .nav-right .nav-link {
+nav .nav-right .nav-link {
   margin: 0 12px;
 }
 
-nav .navbar-collapse .nav-right .nav-icon {
+nav .nav-right .nav-icon {
   color: black;
   width: 40px;
   height: 40px;
@@ -28,18 +72,42 @@ nav .navbar-collapse .nav-right .nav-icon {
           box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.08);
   -webkit-transition: 0.6s;
   transition: 0.6s;
+  text-align: center;
 }
 
-nav .navbar-collapse .nav-right .nav-icon:hover {
-  color: white;
+nav .nav-right .nav-icon:hover {
+  color: white !important;
   background-color: #D85A54;
 }
 
-nav .navbar-collapse .nav-right .membership {
+nav .nav-right .nav-icon.active {
+  color: white !important;
+  background-color: #D85A54;
+}
+
+nav .nav-right .membership {
   font-weight: 500;
-  font-size: 16px;
+  font-size: 14px;
   letter-spacing: -0.8px;
   color: #000000;
+  padding-right: 14px !important;
+  padding-left: 14px !important;
+  -webkit-transition: 1s;
+  transition: 1s;
+  height: 40px;
+  line-height: 16px;
+  border-radius: 8px;
+}
+
+nav .nav-right .membership:hover {
+  color: white !important;
+  background-color: #D85A54;
+}
+
+nav .nav-right .membership.active {
+  color: white !important;
+  background-color: #D85A54;
+  border-radius: 8px;
 }
 
 .primary-button {

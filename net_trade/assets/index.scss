@@ -122,3 +122,44 @@ nav{
     line-height: 25px;
     letter-spacing: -1.2px; 
 }
+#sidebarMenu{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    padding: 58px 0 0;
+    width: 240px;
+    z-index: 600;
+}
+#sidebar-item{
+    
+    width: 260px;
+    border-radius: 8px;
+    height: 65px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: -0.8px;
+    display: flex;
+    align-items: center;
+    transition: 0.3s;
+    border: none;
+    span{
+        margin-left: 20px;
+        color: #999999;
+    }
+    &:hover{
+        background-color: #D85A54;
+        color: white;
+        span{
+            color: white;
+        }
+    }
+}
+#sidebar-item.active{
+    background-color: #D85A54;
+        color: white;
+        span{
+            color: white;
+        }
+}

@@ -15,9 +15,8 @@ toggle.addEventListener('click',()=>{
     }
 
 })
-console.log(navIcon);
+
 for (let index = 0; index < navIcon.length; index++) {
-    console.log(navIcon[0]);
     navIcon[index].addEventListener('click',()=>{
         if(!isActive){
             navIcon[index].classList.add("active");
